@@ -75,7 +75,7 @@ def create_rfm_df(df):
     return rfm_analysis
 
 # Load dataset
-all_df = pd.read_csv("Dashboard/main_data.csv")
+all_df = pd.read_csv("main_data.csv")
 
 # Komponen Side Bar
 all_df['order_purchase_timestamp'] = pd.to_datetime(all_df['order_purchase_timestamp'])
@@ -88,7 +88,7 @@ max_date = all_df["order_purchase_timestamp"].max().date()
 # Membuat Sidebar
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image("Dashboard/logo.png", width=270)
+    st.image("logo.png", width=270)
     # Menambahkan filter tangal
     st.markdown(
         "<h4 style='text-align: center;'>📅 Rentang Waktu Transaksi</h4>",
