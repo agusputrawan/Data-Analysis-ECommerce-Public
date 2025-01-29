@@ -39,10 +39,14 @@ Strategi:
 # Cara Menjalankan proyek ini
 1. Clone Repositori ini
 `https://github.com/agusputrawan/Data-Analysis-ECommerce-Public.git`
-2. Install library yang diperlukan, contoh terdapat dalam requirement.txt
+2. Masuk ke direktori proyek
+`cd Data-Analysis-ECommerce-Publict`
+3. Install library yang diperlukan
    `pip install -r requirements.txt`
-3. Jalankan dengan streamlit
-   `streamlit run Dashboard/dashboard.py`
+4. Masuk ke folder dashboard (jika script ada di dalam subfolder)
+   `cd Dashboard`
+5. Jalankan Streamlit
+   `streamlit run dashboard.py`
 
 # Kunjungi Website
 [E-Commerce-Analysis](https://data-analysis-ecommerce-public-cdbho6ajmnxwtcbrzuzxyx.streamlit.app/)
