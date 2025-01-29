@@ -85,7 +85,6 @@ all_df = load_data()
 
 # Komponen Side Bar
 all_df['order_purchase_timestamp'] = pd.to_datetime(all_df['order_purchase_timestamp'], errors='coerce')
-all_df['order_purchase_timestamp'] = pd.to_datetime(all_df['order_purchase_timestamp'])
 all_df = all_df.sort_values(by="order_purchase_timestamp").reset_index(drop=True)
 
 # Ambil rentang tanggal dari dataset
