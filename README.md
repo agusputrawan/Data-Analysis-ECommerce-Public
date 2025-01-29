@@ -38,7 +38,7 @@ Strategi:
 
 # Cara Menjalankan proyek ini
 1. Clone Repositori ini
-`https://github.com/agusputrawan/Data-Analysis-ECommerce-Public.git`
+`git clone https://github.com/agusputrawan/Data-Analysis-ECommerce-Public.git`
 2. Masuk ke direktori proyek
 `cd Data-Analysis-ECommerce-Public`
 3. Install library yang diperlukan
