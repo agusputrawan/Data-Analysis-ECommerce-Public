@@ -76,10 +76,12 @@ def create_rfm_df(df):
     return rfm_analysis
 
 # Load dataset
-base_dir = os.path.dirname(os.path.abspath(__file__))
-csv_path = os.path.join(base_dir, "main_data.csv")
-all_df = pd.read_csv(csv_path)
-logo_path = os.path.join(base_dir, "logo.png")
+def load_data():
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(base_dir, "main_data.csv")
+    df = pd.read_csv(file_path)
+    return df
+all_df = load_data()
 
 # Komponen Side Bar
 all_df['order_purchase_timestamp'] = pd.to_datetime(all_df['order_purchase_timestamp'])
@@ -92,7 +94,7 @@ max_date = all_df["order_purchase_timestamp"].max().date()
 # Membuat Sidebar
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image("logo_path", width=270)
+    # st.image("logo.png", width=270)
     # Menambahkan filter tangal
     st.markdown(
         "<h4 style='text-align: center;'>📅 Rentang Waktu Transaksi</h4>",
