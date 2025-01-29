@@ -40,7 +40,7 @@ Strategi:
 1. Clone Repositori ini
 `https://github.com/agusputrawan/Data-Analysis-ECommerce-Public.git`
 2. Masuk ke direktori proyek
-`cd Data-Analysis-ECommerce-Publict`
+`cd Data-Analysis-ECommerce-Public`
 3. Install library yang diperlukan
    `pip install -r requirements.txt`
 4. Masuk ke folder dashboard (jika script ada di dalam subfolder)
