@@ -76,15 +76,12 @@ def create_rfm_df(df):
     return rfm_analysis
 
 # Load dataset
-all_df = pd.read_csv("main_data.csv")
 def load_data():
     base_dir = os.path.dirname(os.path.abspath(__file__))
     file_path = os.path.join(base_dir, "main_data.csv")
     df = pd.read_csv(file_path)
     return df
-
-# # Panggil fungsi untuk memuat data
-# all_df = load_data()
+all_df = load_data()
 
 # Komponen Side Bar
 all_df['order_purchase_timestamp'] = pd.to_datetime(all_df['order_purchase_timestamp'])
